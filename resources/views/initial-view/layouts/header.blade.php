@@ -11,14 +11,15 @@
           style="min-height: 400px"
         >
           <h3 class="display-3 font-weight-bold text-white">
-            @if (Request::url() === '/')
-              Beranda
-            @elseif(Request::url() === '/gallery')
-              Gallery
-            @elseif(Request::url() === '/category')
-              Category
-            @endif
-            
+           @if(Request::path()== '/')
+           Beranda
+           @elseif(Request::path()== 'gallery')
+           Gallery
+           @elseif(Request::path()== 'category')
+           Category
+           @elseif(Request::path()== 'login')
+           Login
+           @endif
            </h3>
           <div class="d-inline-flex text-white">
             <p class="m-0"><a class="text-white" href="">Beranda</a></p>

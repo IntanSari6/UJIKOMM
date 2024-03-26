@@ -2,7 +2,7 @@
 class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
 >
 <div class="row pt-5">
-  <div class="col-lg-3 col-md-6 mb-5">
+  <div class="col-lg-4 col-md-6 mb-5">
     <a
       href=""
       class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
@@ -44,13 +44,13 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       ></a>
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 mb-5">
+  <div class="col-lg-4 col-md-6 mb-5">
     <h3 class="text-primary mb-4">Get In Touch</h3>
     <div class="d-flex">
       <h4 class="fa fa-map-marker-alt text-primary"></h4>
       <div class="pl-3">
         <h5 class="text-white">Address</h5>
-        <p>123 Street, New York, USA</p>
+        <p>Jl. Ciwastra No.184A, Mekarjaya, Kec. Rancasari, Kota Bandung, Jawa Barat 40287</p>
       </div>
     </div>
     <div class="d-flex">
@@ -68,7 +68,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       </div>
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 mb-5">
+  <div class="col-lg-4 col-md-6 mb-5">
     <h3 class="text-primary mb-4">Quick Links</h3>
     <div class="d-flex flex-column justify-content-start">
       <a class="text-white mb-2" href="#"
@@ -85,35 +85,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       >
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 mb-5">
-    <h3 class="text-primary mb-4">Register</h3>
-    <form action="">
-      <div class="form-group">
-        <input
-          type="text"
-          class="form-control border-0 py-4"
-          placeholder="Your Name"
-          required="required"
-        />
-      </div>
-      <div class="form-group">
-        <input
-          type="email"
-          class="form-control border-0 py-4"
-          placeholder="Your Email"
-          required="required"
-        />
-      </div>
-      <div>
-        <button
-          class="btn btn-primary btn-block border-0 py-3"
-          type="submit"
-        >
-          Submit Now
-        </button>
-      </div>
-    </form>
-  </div>
+ 
 </div>
 <div
   class="container-fluid pt-5"
