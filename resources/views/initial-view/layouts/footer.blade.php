@@ -9,7 +9,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       style="font-size: 40px; line-height: 40px"
     >
       {{-- <i class="flaticon-043-teddy-bear"></i> --}}
-      <img class="img-fluid" src="{{asset('assets/img/logo.png')}}" style="height: 50px; width: 50px" alt="" />
+      <img class="img-fluid" src="{{asset('assets/img/logoo.png')}}" style="height: 50px; width: 50px" alt="" />
       <span class="text-white">S & S</span>
     </a>
     <p>
@@ -94,7 +94,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
   <p class="m-0 text-center text-white">
     &copy;Copyright
     <br />Distributed By:
-    <a href="https://themewagon.com" target="_blank">Intan Sari</a>
+    <a href="https://www.instagram.com/intannnn.6?igsh=bG1paG42aTEzem90" target="_blank">Intan Sari</a>
   </p>
 </div>
-</div>
+</div>2

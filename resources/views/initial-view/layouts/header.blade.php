@@ -19,6 +19,8 @@
            Category
            @elseif(Request::path()== 'login')
            Login
+           @elseif(Request::path()== 'register')
+           Registration
            @endif
            </h3>
           <div class="d-inline-flex text-white">

@@ -14,7 +14,7 @@
         </li>
 
         <li class="dropdown">
-            <a class="nav-link" href="/photo-data"><i class="fas fa-th-large"></i> <span>Data Foto</span></a>
+            <a class="nav-link {{Request::is('photo-data') ? 'active' : ''}}" href="/photo-data"><i class="fas fa-th-large"></i> <span>Data Foto</span></a>
         </li>
     </ul>
 
