@@ -12,25 +12,6 @@
       </div>
       @endif
 
-<div class="col-12 col-md-6 col-lg-12">
-    <div class="card">
-      <div class="card-header">
-        <h4>Data Foto</h4>
-        <div class="card-body">
-          <div class="dropdown d-inline mr-2">
-            <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Pilih
-            </button>
-            <div class="dropdown-menu">
-             {{-- @foreach ($labs as $lab) --}}
-              <a class="dropdown-item" href="/labb/">pp</a>
-             {{-- @endforeach --}}
-
-            </div>
-          </div>
-      </div>
-      </div>
-
       <div class="card-body p-0">
         <div class="table-responsive">
           <a href="/dashboard/photo-data/create" class="btn btn-primary mb-3">Tambah</a>
