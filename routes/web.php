@@ -18,6 +18,16 @@ use App\Http\Controllers\RegisterController;
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+Route::get('/', function () {
     return view('initial-view.home', [
         "title" => "Home",
         "active" => 'home'
@@ -29,19 +39,14 @@ Route::get('/gallery', function () {
 Route::get('/category', function () {
     return view('initial-view.category');
 });
-// Route::get('/login', function () {
-//     return view('initial-view.login');
-// });
+
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::get('/photo-data', [PhotoDataController::class, 'index']);
 Route::get('/profile', [DashboardController::class, 'profile']);
 
 Route::resource('/dashboard/photo-data', PhotoDataController::class);
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
-Route::post('/logout', [LoginController::class, 'logout']);
-
-Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']);
-
+// Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+// Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::post('/logout', [LoginController::class, 'logout']);
+ 
