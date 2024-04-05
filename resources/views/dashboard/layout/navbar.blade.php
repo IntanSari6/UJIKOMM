@@ -16,9 +16,9 @@
               <i class="far fa-user"></i>Profile
             </a>
             <div class="dropdown-divider"></div>
+
             <form action="/logout" method="post">
               @csrf
-
             <button class="bg-white border-0"><a class="dropdown-item has-icon">
                 <i class="bi bi-box-arrow-right"></i>Logout
               </a></button>  

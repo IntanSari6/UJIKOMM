@@ -17,9 +17,9 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -40,13 +40,12 @@ Route::get('/category', function () {
     return view('initial-view.category');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'dashboard']);
-Route::get('/photo-data', [PhotoDataController::class, 'index']);
-Route::get('/profile', [DashboardController::class, 'profile']);
+// Route::group(['middleware' => 'prevent-back-history'],function(){
+    Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+    Route::get('/photo-data', [PhotoDataController::class, 'index']);
+    Route::get('/profile', [DashboardController::class, 'profile']);
+    Route::resource('/dashboard/photo-data', PhotoDataController::class);
+// });
 
-Route::resource('/dashboard/photo-data', PhotoDataController::class);
 
-// Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-// Route::post('/login', [LoginController::class, 'authenticate']);
-// Route::post('/logout', [LoginController::class, 'logout']);
  
