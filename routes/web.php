@@ -28,10 +28,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::get('/', function () {
-    return view('initial-view.home', [
-        "title" => "Home",
-        "active" => 'home'
-    ]);
+    return view('initial-view.home');
 });
 Route::get('/gallery', function () {
     return view('initial-view.gallery');
